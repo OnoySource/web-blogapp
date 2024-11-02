@@ -1,4 +1,4 @@
-<div class="w-full h-auto bg-green-200">
+<div class="w-full h-auto">
   <h1 class="font-bold">Mau baca artikel apa malam ini?</h1>
   <p class="font-semibold text-slate-500 text-[12px] lg:text-md">Cari tau apa yang ingin kamu tahu</p>
   <hr class="mt-4 mb-2">
@@ -17,12 +17,12 @@
   <h1 class="font-bold py-4">Kategori saat ini : Teknologi</h1>
 </div>
 
-<div class="w-full grid grid-cols-2 gap-4 sm:grid-cols-2 lg:w-full lg:grid-cols-4 text-justify text-slate-700 ">
+<div class="w-full grid grid-cols-2 gap-4 sm:grid-cols-2 lg:w-full lg:grid lg:grid-cols-4 text-justify text-slate-700 ">
   @for ($i = 0; $i < 8; $i++)
   <div class="w-full h-auto shadow-xl rounded-lg">
     <img class="w-70 h-auto lg:w-full aspect-video object-cover rounded-b-none rounded-lg" src="{{asset('images/istockphoto-1738752533-612x612.jpg')}}" alt="">
       <div class="w-full h-auto p-2 rounded-lg ">
-        <h1 class="font-bold mb-2 lg:text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1> 
+        <h1 class="font-bold mb-2 text-sm lg:text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1> 
            <p class="text-[11px] leading-4 lg:text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam incidunt obcaecati aperiam incidunt obcaecati.</p>
       </div>
   </div>

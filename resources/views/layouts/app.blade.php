@@ -16,7 +16,7 @@
     }
   </style>
 </head>
-<body class="text-slate-700 sm:bg-blue-400 bg-white text-sm lg:text-lg  ">
+<body class="text-slate-700 bg-white text-sm text-base lg:text-lg  ">
   @include('layouts.navbar')
 <div id="container" class="p-8 lg:px-28">
   <section class="w-full h-40   mb-8">
@@ -28,9 +28,9 @@
             </svg>
         </div>
 
-        <div class="p-2 bg-indgo-400 absolute mt-6 inset-0  text-slate-50 z-10">
+        <div class="p-2 px-6 bg-indgo-400 absolute mt-6 inset-0  text-slate-50 z-10">
             <h3 class="font-semibold ">Selamat datang di <span class="text-xl font-bold">MindCode's</span></h3>
-            <blockquote class="mt-2 font-semibold italic tet-center">
+            <blockquote class="mt-2 text-[12px] font-semibold italic tet-center">
                 "Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa anda tidak tahu apa-apa."
                 <p class="font-bold text-right mt-2 mr-10"> - Socrates</p>
             </blockquote>

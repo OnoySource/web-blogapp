@@ -27,7 +27,7 @@
       
       <span class="w-full text-[10px] my-4 text-right">Published &emsp14; : &emsp14; 12 october 2024</span>
       
-      <p class="text-sm font-semibold sm:text-sm md:text-base lg:text-lg"> 
+      <p class="text-sm font-semibold text-slate-700 sm:text-sm md:text-base lg:text-lg"> 
         Pendahuluan: Produktivitas di tempat kerja adalah kunci untuk mencapai tujuan bisnis. Namun, banyak faktor yang dapat mengganggu fokus dan efisiensi kerja. Dalam artikel ini, kami akan membahas lima cara efektif untuk meningkatkan produktivitas Anda dan tim Anda.
 
 1. Atur Prioritas Tugas Sebelum memulai hari, luangkan waktu untuk menentukan tugas mana yang paling penting. Gunakan metode seperti Eisenhower Matrix untuk membantu Anda memprioritaskan tugas berdasarkan urgensi dan pentingnya. Dengan demikian, Anda bisa fokus pada apa yang benar-benar penting.
