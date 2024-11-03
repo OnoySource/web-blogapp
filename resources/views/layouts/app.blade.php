@@ -19,24 +19,18 @@
 <body class="text-slate-700 bg-white text-sm text-base lg:text-lg  ">
   @include('layouts.navbar')
 <div id="container" class="p-8 lg:px-28">
-  <section class="w-full h-40   mb-8">
-    <div class="w-full h-40 bg-indigo-500 rounded-lg relative py-7">
+  <section class="w-full h-auto   mb-8">
 
-        <div class="bg-rd-200 w-full h-full rounded-md absolute -mt-7 z-0 overflow-hidden">
-            <svg class="w-full h-auto " viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#818cf8" d="M51.5,-55C62.7,-51.9,65.1,-31.9,58.8,-17.8C52.4,-3.7,37.3,4.6,28.5,13.3C19.7,22,17.2,31.2,12.3,32.5C7.3,33.8,-0.1,27.1,-11.9,25.8C-23.7,24.5,-40,28.5,-53.7,22.5C-67.3,16.4,-78.4,0.3,-77.8,-15.5C-77.1,-31.3,-64.8,-46.9,-49.9,-49.3C-35,-51.8,-17.5,-41.1,1.3,-42.6C20.1,-44.2,40.2,-58.1,51.5,-55Z" transform="translate(150 100)" />
-            </svg>
-        </div>
-
-        <div class="p-2 px-6 bg-indgo-400 absolute mt-6 inset-0  text-slate-50 z-10">
-            <h3 class="font-semibold ">Selamat datang di <span class="text-xl font-bold">MindCode's</span></h3>
-            <blockquote class="mt-2 text-[12px] font-semibold italic tet-center">
-                "Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa anda tidak tahu apa-apa."
-                <p class="font-bold text-right mt-2 mr-10"> - Socrates</p>
-            </blockquote>
-        </div>
-    </div>
+    <div class="w-full h-auto bg-inigo-400   text-slate-500  lg:w-full lg:h-full lg:px-20">
+      <h3 class="font-semibold lg:text-lg ">Selamat datang di <span class="text-xl lg:text-xl font-bold">MindCode's</span></h3>
+      <blockquote class="mt-2 text-[12px] lg:text-lg font-semibold italic tet-center">
+          "Satu-satunya kebijaksanaan sejati adalah mengetahui bahwa anda tidak tahu apa-apa."
+          <p class="font-bold text-right mt-2 mr-10"> - Socrates</p>
+      </blockquote>
+  </div>
 </section>
+<br>
+<br>
   @include('layouts.list-articles')
 </div>
   @include('layouts.footer')

@@ -21,4 +21,12 @@ class HomeController extends Controller
         ];
         return view("articles",$data);
     }
+    public function dashboard(){
+        $data = 
+        [
+            "title" => "Dashboard",
+        ];
+        return view("src/dashboard",$data);
+    }
+
 }

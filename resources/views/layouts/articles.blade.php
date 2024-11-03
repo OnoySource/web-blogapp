@@ -15,8 +15,10 @@
   @include('layouts.navbar')
   <div id="container" class="p-8 lg:p-8 lg:px-20">
 <section class="bg-gren-300  pt-6 sm:p-20 md:p-20 lg:px-20 "> 
+  <span class="text-[10px] text-slate-400 text-left">Senin, 20 agustus 2024 </span>
   <div class="lg:grid grid-rows-2 grid-flow-col gap-8 ">
     <div class="relative text-justify row-span-2 w-full md:row-span-4 flex flex-col items-center">
+      
      <h1 class="text-lg w-full sm:text-[18px] md:w-full  md:text-xl lg:w-full text-left lg:text-2xl  font-bold -slate-800 ">Penemuan gadis cilik di sebuah kota ternama</h1>
         <br> <br>
         <x-span-sosmed></x-span-sosmed>       
@@ -51,6 +53,7 @@ Kesimpulan: Meningkatkan produktivitas di tempat kerja tidak harus sulit. Dengan
 </div>
 </div> 
 </section>
+<br><br>
 @include('layouts.list-articles')
 </div>
 @include('layouts.footer')

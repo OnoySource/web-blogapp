@@ -10,21 +10,21 @@
     @csrf
     <img class="w-8 h-auto object-cover lg:w-10" src="{{asset('images/categories.png')}}" alt="not image">
     <input class="w-70 border-[1px] lg:w-96  border-slate-300 p-2 lg:p-3 rounded-md outline-none" type="text"name="search"placeholder="cari artikel">
-    <button class="w-10 h-auto lg:w-12 p-[4px] bg-cyan-500 rounded-r-md absolute right-0  " type="submit">
+    <button class="w-10 h-auto lg:w-12 p-[4px] hover:bg-gray-200 rounded-r-md absolute right-0  " type="submit">
       <img src="{{asset('images/find.png')}}" alt="not image" class="overflow-hidden ">
     </button>
   </form>
   <h1 class="font-bold py-4">Kategori saat ini : Teknologi</h1>
 </div>
 
-<div class="w-full grid grid-cols-2 gap-4 sm:grid-cols-2 lg:w-full lg:grid lg:grid-cols-4 text-justify text-slate-700 ">
-  @for ($i = 0; $i < 8; $i++)
-  <div class="w-full h-auto shadow-xl rounded-lg">
-    <img class="w-70 h-auto lg:w-full aspect-video object-cover rounded-b-none rounded-lg" src="{{asset('images/istockphoto-1738752533-612x612.jpg')}}" alt="">
-      <div class="w-full h-auto p-2 rounded-lg ">
-        <h1 class="font-bold mb-2 text-sm lg:text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1> 
-           <p class="text-[11px] leading-4 lg:text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aperiam incidunt obcaecati aperiam incidunt obcaecati.</p>
-      </div>
+<div class="text-justify text-slate-700 flex flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-wrap xl:flex-row xl:flex-wrap">
+  @for ($i = 0; $i < 8; $i++) 
+  <div class="w-full shadow-xl rounded-lg mb-4 flex flex-row  gap-2 md:w-1/2 lg:1/4 xl:1/4">
+    <img class="w-1/3 h-auto aspect-video object-cover rounded rounded-lg" src="{{asset('images/istockphoto-1738752533-612x612.jpg')}}" alt="">
+      <div class="p-2 rounded-lg flex flex-col justify-center w-2/3">
+        <h1 class="font-bold mb-2 text-sm lg:text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima qui nemo!</h1> 
+           <p class="text-[11px] leading-4 lg:text-md"> 1 jam yang lalu</p>
+           </div>
   </div>
   
   @endfor
