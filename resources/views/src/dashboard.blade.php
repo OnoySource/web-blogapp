@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
  {{--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
   <meta charset="utf-8"> --}}
