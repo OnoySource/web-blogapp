@@ -11,9 +11,9 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function post()
+    public function index()
     {
-        return view("src.auth.post");
+        return view("welcome");
     }
 
     public function store(StorePostRequest $request)
