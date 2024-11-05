@@ -13,7 +13,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view("src.auth.post");
+        return view("welcome");
     }
 
     public function store(StorePostRequest $request)
@@ -53,3 +53,9 @@ class PostController extends Controller
         //
     }
 }
+
+
+
+
+
+

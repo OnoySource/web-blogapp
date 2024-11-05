@@ -26,7 +26,7 @@ class HomeController extends Controller
         [
             "title" => "Dashboard",
         ];
-        return view("src/dashboard",$data);
+        return view("src/auth/dashboard",$data);
     }
 
 }
