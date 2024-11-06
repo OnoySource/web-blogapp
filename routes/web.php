@@ -5,6 +5,7 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 
+
 Route::get("/",[HomeController::class,"index"]);
 Route::get("/articles",[HomeController::class,"articles"]);
 Route::get("/dash",[HomeController::class,"dashboard"]);
