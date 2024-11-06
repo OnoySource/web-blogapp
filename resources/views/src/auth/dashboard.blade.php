@@ -15,6 +15,7 @@
 
  <style>
     *{
+
       borer:2px solid red;
     }
   </style>
@@ -23,8 +24,11 @@
   @include('layouts.navbar') 
   
   <section class="p-8">
-   
+   <div class="bg-slate-300 mb-2 rounded-t-md p-2 px-4">
+    <h1 class="">Dashboard  </h1>
+   </div>
     @livewire('dashboard')
+    
    </section>
   </body>
 </html>
