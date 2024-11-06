@@ -20,7 +20,10 @@
   </style>
 </head>
 <body class="text-slate-700 bg-white text-sm text-base lg:text-lg  ">
-   <section class="p-8">
+  @include('layouts.navbar') 
+  
+  <section class="p-8">
+   
     @livewire('dashboard')
    </section>
   </body>

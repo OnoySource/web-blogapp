@@ -17,7 +17,7 @@
   </style>
 </head>
 <body class="text-slate-700 bg-white text-sm text-base lg:text-lg  ">
-   <section class="p-8">
+   <section class="p-8 lg:p-4 mx-auto lg:max-w-screen-lg">
     @livewire('post')
    </section>
   </body>

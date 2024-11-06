@@ -15,6 +15,8 @@ class Dashboard extends Component
 
     public function render()
     {
+        $this->articles = \App\Models\Article::all();
+        
         return view('livewire.dashboard');
     }
 }

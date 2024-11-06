@@ -1,6 +1,6 @@
 
 
 @extends('layouts.articles')
-@section('title', $title)
+@section('title', "MindCode")
 
 

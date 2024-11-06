@@ -18,17 +18,16 @@
 </div>
 
 <div class="text-justify text-slate-700 flex flex-col md:flex-row md:flex-wrap lg:flex-row lg:flex-wrap xl:flex-row xl:flex-wrap">
-  @for ($i = 0; $i < 8; $i++) 
+
+    
   <div class="w-full shadow-xl rounded-lg mb-4 flex flex-row  gap-2 md:w-1/2 lg:1/4 xl:1/4">
     <img class="w-1/3 h-auto aspect-video object-cover rounded rounded-lg" src="{{asset('images/istockphoto-1738752533-612x612.jpg')}}" alt="">
       <div class="p-2 rounded-lg flex flex-col justify-center w-2/3">
-        <h1 class="font-bold mb-2 text-sm lg:text-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minima qui nemo!</h1> 
-           <p class="text-[11px] leading-4 lg:text-md"> 1 jam yang lalu</p>
+        <h1 class="font-bold mb-2 text-sm lg:text-lg ">hah</h1> 
+           <p class="text-[11px] leading-4 lg:text-md"></p>
            </div>
   </div>
-  
-  @endfor
-  
+
 </div>
 
 <div class="">

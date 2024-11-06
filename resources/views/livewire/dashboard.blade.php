@@ -15,10 +15,10 @@
         <tbody>
             @foreach ($articles as $post)
                 <tr class="border-b">
-                    <<td class="px-4 py-2 text-sm text-gray-800">{{ $loop->iteration}}</td>
+                    <td class="px-4 py-2 text-sm text-gray-800">{{ $loop->iteration}}</td>
                     <td class="px-4 py-2 text-sm text-gray-800">{{ $post->title }}</td>
                     <td class="px-4 py-2 text-sm text-gray-800">
-                        <a href="{{ $post->url }}" class="text-blue-500 hover:underline">{{ $post->url }} -></a>
+                        <a href="{{route('article.articles', $post->slug)}}" class="text-blue-500 hover:underline">{{ $post->url }} -></a>
                     </td>
                     <td class="px-4 py-2 text-sm text-gray-800">{{ $post->author }}</td>
                     <td class="px-4 py-2 text-sm text-gray-800">{{ Str::limit($post->slug, 50) }}</td>
