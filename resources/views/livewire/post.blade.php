@@ -6,11 +6,11 @@
     @endif
 
     <form wire:submit.prevent="store()" class="bg-re-300 flex flex-col gap-4 p-6">
-        <input type="text" wire:model="title"placeholder="masukan judul artikel : max 30 character" class="bg-slate-50  placeholder-slate-400 outline-none hover:outline-blue-500/50 border-[2px] border-slate-400 rounded-md p-2 px-4"> 
+        <input type="text" wire:model="title"placeholder="masukan judul artikel : max 60 character" class="bg-slate-50  placeholder-slate-400 outline-none hover:outline-blue-500/50 border-[2px] border-slate-400 rounded-md p-2 px-4"> 
         @error('title')
             <div class="text-red-500 text-sm mt-1">{{ $message }}</div>
         @enderror  
-        <input type="text" wire:model="slug" placeholder="masukan slug artikel : min:5 character max:30 character" class="outline-none hover:outline-blue-500/50 border-[2px] border-slate-400 rounded-md p-2 px-4"> 
+        <input type="text" wire:model="slug" placeholder="masukan slug artikel : min:5 character max:60 character" class="outline-none hover:outline-blue-500/50 border-[2px] border-slate-400 rounded-md p-2 px-4"> 
         @error('slug')
         <div class="text-red-500 text-sm mt-1">{{ $message }}</div>
         @enderror

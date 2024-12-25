@@ -3,7 +3,7 @@
     <h1 class="w-16 h-auto left-3  text-xl  top-4 lg:w-80 h-auto font-semibold  md:text-2xl lg:text-3xl absolute  inset-y-0 lg:left-8  lg:top-6">MindCode's</h1>
     <li class="p-2 shadow-lg rounded-full hover:bg-cyan-300 ">
       <a href="#"class="">
-        <img class="w-6 h-auto  lg:w-10 h-auto" src="{{asset('images/user.png')}}" alt="not image">
+        <i class="fa-solid fa-user"></i>
       </a>
     </li>
    {{-- <li class="p-2 shadow-lg rounded-full hover:bg-cyan-300  ">
@@ -13,7 +13,7 @@
     </li> --}}
     <li class="p-2 shadow-lg rounded-full hover:bg-cyan-300 ">
       <a href="#"class="">
-        <img class="w-6 h-auto lg:w-10 h-auto " src="{{asset('images/home.png')}}" alt="not image">
+        <i class="fa-solid fa-house"></i>
       </a>
     </li>
   </ul>

@@ -15,8 +15,8 @@ class Post extends Component
 
     // Validasi data
     protected $rules = [
-        'title' => 'required|string|max:50',  // Tambahkan 'required' untuk title
-        'slug' => 'required|string|min:5|max:50',  // Tambahkan 'required' untuk slug
+        'title' => 'required|string|max:60',  // Tambahkan 'required' untuk title
+        'slug' => 'required|string|min:5|max:60',  // Tambahkan 'required' untuk slug
         'content' => 'required|string|min:10',  // Perbaiki aturan content
         'image_path' => 'required|image|max:1024',  // Validasi file image
     ];
