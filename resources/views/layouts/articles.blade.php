@@ -26,9 +26,9 @@
         <x-span-sosmed></x-span-sosmed>       
      <br>
       <div class=" w-full h-auto sm:h-auto lg:w-full ">
-          <img class="w-full aspect-video md:w-full lg:w-full md:aspect-video lg:aspect-video  object-cover object-center rounded-md shadow-md " src="{{asset('images/pexels-photo-356056.jpeg')}}" alt="">
+          <img class="w-full aspect-video md:w-full lg:w-full lg:h-80 md:aspect-video lg:aspect-video  object-cover object-center rounded-md shadow-md " src="{{asset('images/pexels-photo-356056.jpeg')}}" alt="">
       </div>
-      
+      <br> <br> 
       <p class="text-sm font-semibold text-slate-700 sm:text-sm md:text-base lg:text-lg">{{$article->content}}</p>
     <br>
     <div class="w-full h-auto  py-2 text-sm mt-8 md:text-md font-semibold rounded-md">

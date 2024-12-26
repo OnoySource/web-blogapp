@@ -8,7 +8,7 @@ use App\Models\Article;
 class HomeController extends Controller
 {
     public function index(){
-        $articles = Article::all();
+        $articles = Article::latest()->get();
         
         return view("index",compact("articles"));
     }
