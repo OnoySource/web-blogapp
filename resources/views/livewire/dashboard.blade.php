@@ -21,19 +21,19 @@
                 <th class="bg-slate-300 text-center sticky top-0 z-20 border-2 border-slate-200 px-4 py-2 text-left text-sm font-semibold text-gray-600">Views</th>
                 <th class="bg-slate-300 text-center sticky top-0 z-20 border-2 border-slate-200 px-4 py-2 text-left text-sm font-semibold text-gray-600">Created At</th>
                 <th class="bg-slate-300 text-center sticky top-0 z-20 border-2 border-slate-200 px-4 py-2 text-left text-sm font-semibold text-gray-600">Actions</th>
-                <th class="bg-slate-300 text-center sticky top-0 z-20 px-4 py-2 text-left text-sm font-semibold text-gray-600">Actions</th>
+                
             </tr>
         </thead>
         <tbody>
             @foreach ($articles as $post)
                 <tr class="text-center">
                     <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800 ">{{ $loop->iteration}}</td>
-                    <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800">{{ $post->title }}</td>
+                    <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800 text-left">{{ $post->title }}</td>
                     <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800">
                         <a href="{{route('article.articles', $post->slug)}}" class="text-blue-500 hover:underline">{{ $post->url }} -></a>
                     </td>
                     <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800">{{ $post->author }}</td>
-                    <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800">{{ Str::limit($post->slug, 50) }}</td>
+                    <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800 text-left">{{ Str::limit($post->slug, 50) }}</td>
                     <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800">{{ $post->views ?? '0' }}</td>
                     <td class="px-4 py-2 border-2 border-slate-200 text-sm text-gray-800">{{ $post->created_at->format('d M Y') }}</td>
                     <td class="px-4 py-2 text-sm text-gray-800 flex justify-center items-center space-x-2 ">
@@ -51,13 +51,7 @@
                             </button>
                         </form>
                     </td>
-                    <td>
-                        @for ($i = 0; $i < 60; $i++)
-                        <ul>
-                            <li>{{$i}}</li>
-                        </ul>
-                    @endfor
-                    </td>
+                
                 </tr>
             @endforeach
         </tbody>
