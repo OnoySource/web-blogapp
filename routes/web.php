@@ -11,4 +11,4 @@ Route::get("/",[HomeController::class,"index"]);
 Route::get("/dash",[HomeController::class,"dashboard"]);
 Route::get("/post",[PostController::class,"index"]);
 
-Route::get("/article/{slug}",[HomeController::class,"showBySlug"])->name("article.articles");
+Route::get("/article/{slug}",[ArticleController::class,"showBySlug"])->name("article.articles");

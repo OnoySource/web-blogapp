@@ -4,6 +4,8 @@
  {{-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> --}}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
   <title>@yield('title')</title>
   @vite(['resources/css/app.css','resources/js/app.js'])
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +20,9 @@
 
 <body class=" bg-gray-100 text-sm text-slate-800 sm:bg-gree-300 md:bg-blu-300 lg:text-lg ">
   @include('layouts.navbar')
-  <div id="container" class="p-8  lg:px-40 mx-auto lg:max-w-screen-xl h-auto bg-re-300">
+  <div id="container" class="p-2  lg:px-40 mx-auto lg:max-w-screen-xl h-auto bg-re-300">
 
-<section class="w-full h-auto bg-gray-50 rounded-xl shadow-lg border-[1px] border-slate-300 shadow-gray-300 p-8 sm:p-12 md:p-16 lg:p-16 mx-auto  "> 
+<section class="w-full h-auto bg-gray-50 rounded-lg shdow-lg border-[1px] brder-slate-300 shaow-gray-300 p-4  sm:p-12 md:p-16 lg:p-16 mx-auto  "> 
   
   <div class="w-full h-auto flex justify-between gap-4 items-center text-md text-slate-700  bg-gren-200">
     <div class="usr  w-full flex items-center gap-4 bg-rd-200">
@@ -45,6 +47,8 @@
     <div class="tag w-full text-left m-4 text-md  flex justify-start gap-4 text-slate-600">
       <div class="bg-gray-200 px-4 rounded-full">#tag</div>
         <div class="bg-gray-200 px-4 rounded-full">#teknologi</div>
+        <div class="bg-gray-200 px-4 rounded-full">dilihat : {{$article->views}}</div>
+      
     </div>
     
       <div class=" w-full h-auto sm:h-auto lg:w-full ">

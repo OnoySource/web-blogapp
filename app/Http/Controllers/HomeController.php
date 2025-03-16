@@ -34,21 +34,6 @@ class HomeController extends Controller
 
     
 
-    public function articles(){
-
-        $data = 
-        [
-            "title" => "Article",
-        ];
-        return view("article.articles",$data);    
-    }
-
-    public function showBySlug($slug)
-    {
-        $article = Article::where('slug', $slug)->firstOrFail();
-        $articles = Article::paginate(3);
-        return view('article.articles', compact("article","articles"));
-    }
 
     public function dashboard(Request $request){
         

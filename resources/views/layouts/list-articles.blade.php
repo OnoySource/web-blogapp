@@ -1,30 +1,36 @@
-<div class="text-left text-slate-700 sm:bg-bue-800 md:bg-geen-300 lg:bg-wite w-full">
-  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-6 lg:gap-2 xl:gap-10">
-      @foreach ($articles as $item)
-      <a href="{{ route('article.articles', $item->slug) }}" class="">
+<div class="text-justify hyphens-auto text-slate-700 w-full   lg:max-w-7xl bg-gray-50">
+  <div class="container mx-auto  sm:px-6 md:px-8 lg:px-0  bg-re-300 ">
+    <div class="grid grid-cols-1 mt-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
 
-      <div class="w-full shadow-xl  rounded-lg  flex md:flex-col lg:flex-col sm:flex-row shadow-lg bg-white border-[1px] border-white-300 p-4 shadow-slate-300">
-          <!-- Gambar -->
-          <img class="w-full sm:w-1/2 h-auto object-cover lg:rounded-lg sm:rounded-none sm:rounded-l-lg md:w-full lg:w-full hover:brightness-50" src="{{ Storage::url($item->image_path) }}" alt="{{ $item->title }}">
-          
-          <!-- Konten Artikel -->
-          <div class="mb-2 flex flex-col justify-center w-full sm:w-1/2 md:w-full text-center sm:text-left">
-              <h1 class="font-bold mt-2 text-sm lg:text-lg hover:text-indigo-500 transition-colors duration-300 ease-in-out">
-                  {{ $item->title }}
+      @foreach ($articles as $item)
+        <a href="{{ route('article.articles', $item->slug) }}" class="w-full">
+          <div class="w-full h-full shadow-xl rounded-lg flex flex-col bg-white p-4 min-h-[200px]">
+    
+            <!-- Gambar -->
+            <img class="w-full h-48 sm:h-52 md:h-56 lg:h-64 object-cover rounded-lg hover:brightness-50 transition-all duration-300"
+              src="{{ Storage::url($item->image_path) }}" 
+              alt="{{ $item->title }}">
+    
+            <!-- Konten Artikel -->
+            <div class="flex flex-col flex-grow justify-between mt-3">
+              <h1 class="font-bold text-base sm:text-lg md:text-xl hover:text-indigo-500 transition-colors duration-300 ease-in-out line-clamp-2">
+                {{ $item->title }}
               </h1>
-              <p class="text-[11px] text-right mt-2 leading-4 lg:text-md">
+              <p class="text-xs sm:text-sm md:text-base text-gray-600 mt-1">
                 {{ \Carbon\Carbon::parse($item->created_at)->format('d-M-Y') }}
               </p>
+            </div>
+    
           </div>
-      </div>
-      </a>
+        </a>
       @endforeach
+    
+    </div>
+    
   </div>
 </div>
 
-<div class="">
-  <!-- Menampilkan pagination -->
-<div class="pagination py-4">
-</div>
+<!-- Pagination -->
+<div class="flex justify-center py-6">
   {{ $articles->links() }}
 </div>
