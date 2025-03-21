@@ -7,8 +7,7 @@ export default defineConfig({
     port: 5173,
     https: false,  // Jika kamu tidak menggunakan HTTPS untuk Vite di localhost
   },
-  base: '/css/',  // Sesuaikan path asset CSS dan JS dengan ngrok
-  plugins: [
+    plugins: [
     laravel({
       input: ['resources/css/app.css', 'resources/js/app.js'],
       refresh: true,

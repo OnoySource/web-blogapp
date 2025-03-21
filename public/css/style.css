@@ -1,19 +1,24 @@
 *{  
-    margin:0;
-    borer: 1px solid red;
+  margin:0;
+  boder: 1px solid red;
+
 }
 body{
-    background-color: #f9fafb;
-    
-    font-family: "Poppins", sans-serif;
-  
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  width: 100vw;
+  backgound-color: red;
+  font-family: "Source Sans 3", sans-serif;
+}
 
 
-  
+.source-sans-3-<uniquifier> {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+

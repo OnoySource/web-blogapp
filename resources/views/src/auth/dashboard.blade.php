@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
 <head>
- {{--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-  <meta charset="utf-8"> --}}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@yield('title')</title>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>@yield('title','Dashboard')</title>
+
   @vite(['resources/css/app.css','resources/js/app.js'])
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,9 @@
     }
   </style>
 </head>
-<body class="text-slate-700 bg-white text-sm text-base lg:text-lg  ">
-  @include('layouts.navbar') 
+<body class="text-slate-700 bg-white text-sm text-base lg:text-2xl  ">
   
-  <section class="p-8">
+  <section class="p-8 ">
    <div class="bg-slate-300 mb-2 rounded-t-md p-2 px-4">
     <h1 class="">Dashboard  </h1>
    </div>

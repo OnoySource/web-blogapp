@@ -1,3 +1,23 @@
-body{
-  background-color: red;
+*{  
+  margin:0;
+  border: 1px solid red;
 }
+body{
+  width: 100vw;
+  background-color: red;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+
+.source-sans-3-<uniquifier> {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+

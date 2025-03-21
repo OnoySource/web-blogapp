@@ -1,22 +1,25 @@
 <?php
 
 namespace App\Livewire;
+
 use Livewire\Component;
-use Illuminate\Support\Facades\Http;
+use App\Models\Article;
 
 class Dashboard extends Component
 {
     public $articles;
+
     public function mount()
     {
-        $this->articles = \App\Models\Article::all();
-       // $this->render();
+        $this->articles = Article::latest()->get(); // Ambil artikel terbaru
     }
 
     public function render()
     {
-        $this->articles = \App\Models\Article::all();
-        
-        return view('livewire.dashboard');
+        $articles = Article::latest()->get();
+
+        return view('livewire.dashboard', [
+            'articles' => $this->articles
+        ]);
     }
 }

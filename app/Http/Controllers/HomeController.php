@@ -10,7 +10,7 @@ use Carbon\Carbon;
 class HomeController extends Controller
 {
     public function index(){
-        $articles = Article::orderBy('created_at', 'desc')->paginate(8);
+        $articles = Article::latest()->paginate(8);
         
         $currentTime = Carbon::now("Asia/Jakarta");
         $timeOfDay = $currentTime->format('H'); // Mendapatkan jam sekarang dalam format 24 jam
@@ -31,17 +31,4 @@ class HomeController extends Controller
 
         return view("index",compact("articles","greeting","currentTime"));
     }
-
-    
-
-
-    public function dashboard(Request $request){
-        
-        $data = 
-        [
-            "title" => "Dashboard",
-        ];
-        return view("src/auth/dashboard",$data);
-    }
-
 }

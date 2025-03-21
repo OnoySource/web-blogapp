@@ -15,11 +15,7 @@ class ArticleController extends Controller
 
     public function articles(){
 
-        $data = 
-        [
-            "title" => "Article",
-        ];
-        return view("article.articles",$data);    
+        return view("article.articles");    
     }
 
     public function showBySlug($slug)

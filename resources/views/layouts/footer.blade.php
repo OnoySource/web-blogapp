@@ -1,4 +1,4 @@
-<footer class="w-full h-fit bg-slate-600 text-white p-8 mt-8 lg:text-lg"> 
+<footer class="w-full h-fit bg-slate-600 text-white p-8  mt-8 lg:text-lg"> 
   <div class="w-48 pb-4 lg:text-md">
     <h1 class="text-lg text-cyan-300 font-bold pb-2 lg:text-lg">MindCode</h1>
     <p class="text-sm font-semibold lg:text-sm">Bertumbuh dan berbagi bersama demi menggapai masa tua sejahtera.</p>
